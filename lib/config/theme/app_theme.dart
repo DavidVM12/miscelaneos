@@ -9,10 +9,10 @@ class AppTheme {
       //text theme
       textTheme: TextTheme(
         titleLarge: GoogleFonts.montserratAlternates(),
-        titleMedium: GoogleFonts.montserratAlternates(fontSize: 35),
+        titleMedium: GoogleFonts.montserratAlternates(fontSize: 30),
 
         //for any reason this body fonts are working with the text theme
-        bodyLarge: GoogleFonts.montserratAlternates(fontSize: 35),
-        bodyMedium: GoogleFonts.montserratAlternates(),
+        bodyLarge: GoogleFonts.montserratAlternates(fontSize: 30),
+        bodyMedium: GoogleFonts.montserratAlternates(fontSize: 12),
       ));
 }
