@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miscelaneos/config/config.dart';
 import 'package:miscelaneos/presentation/providers/app_state_provider.dart';
+import 'package:miscelaneos/presentation/providers/permissions/permissions_provider.dart';
 
 void main() {
   runApp(const ProviderScope(child: MainApp()));
@@ -19,6 +20,7 @@ class MainAppState extends ConsumerState<MainApp> with WidgetsBindingObserver {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+    ref.read(permissionProvider.notifier).checkPermissions();
   }
 
   @override
@@ -29,6 +31,9 @@ class MainAppState extends ConsumerState<MainApp> with WidgetsBindingObserver {
 
   didchangeAppLifecycleState(AppLifecycleState state) {
     ref.read(appStateProvider.notifier).state = state;
+    if (state == AppLifecycleState.resumed) {
+      // ref.read(permissionProvider.notifier).checkPermissions();
+    }
     super.didChangeAppLifecycleState(state);
   }
 
