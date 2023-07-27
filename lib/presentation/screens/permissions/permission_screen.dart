@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class PermissionScreen extends StatelessWidget {
   const PermissionScreen({super.key});
@@ -14,18 +15,18 @@ class PermissionScreen extends StatelessWidget {
   }
 }
 
-class _Permissionview extends StatelessWidget {
-  const _Permissionview({super.key});
+class _Permissionview extends ConsumerWidget {
+  const _Permissionview();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
     return ListView(
       children: [
         CheckboxListTile(
             value: true,
             title: const Text('camera'),
             subtitle: const Text('Actual state'),
-            onChanged: (value) {})
+            onChanged: (value) {}),
       ],
     );
   }
