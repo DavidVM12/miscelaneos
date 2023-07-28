@@ -26,4 +26,18 @@ final router = GoRouter(routes: [
       builder: (context, state) => const GyroscopeBallScreen()),
 
   GoRoute(path: '/compass', builder: (context, state) => const CompassScreen()),
+
+  //!pokemons
+  GoRoute(
+      path: '/pokemons',
+      builder: (context, state) => const PokemonsScreen(),
+      routes: [
+        GoRoute(
+            path: ':id',
+            builder: (context, state) {
+              final id = state.pathParameters['id'].toString();
+
+              return PokemonScreen(pokemonId: id);
+            }),
+      ])
 ]);
