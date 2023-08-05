@@ -11,3 +11,6 @@ sha-256
 cd android
 ./gradlew signingReport 
 ```
+
+
+## if the api keys don't function can be for they dont work
