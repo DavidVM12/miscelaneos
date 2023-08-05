@@ -39,5 +39,11 @@ final router = GoRouter(routes: [
 
               return PokemonScreen(pokemonId: id);
             }),
-      ])
+      ]),
+
+
+  //!biometric	
+  GoRoute(
+      path: '/biometric',
+      builder: (context, state) => const BiometricScreen()),
 ]);

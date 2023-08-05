@@ -13,3 +13,7 @@ export 'sensors/magnetometer_providers.dart';
 //pokemons
 export 'pokemons/pokemon_list_provider.dart';
 export 'pokemons/pokemon_provider.dart';
+
+//local_auth
+
+export 'local_auth/local_auth_provider.dart';
