@@ -24,7 +24,7 @@ final userLocationProvider = FutureProvider.autoDispose<(double, double)>((ref) 
       // requesting permissions again (this is also where
       // Android's shouldShowRequestPermissionRationale 
       // returned true. According to Android guidelines
-      // your App should show an explanatory UI now.
+      // your App should show an explanatory UI now.  
       throw 'Location permissions are denied';
     }
   }
