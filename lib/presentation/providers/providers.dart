@@ -17,3 +17,9 @@ export 'pokemons/pokemon_provider.dart';
 //local_auth
 
 export 'local_auth/local_auth_provider.dart';
+
+
+//location
+
+export 'location/user_location_provider.dart';
+export 'location/watch_location_provider.dart';

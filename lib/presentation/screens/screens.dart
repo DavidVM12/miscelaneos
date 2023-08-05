@@ -12,5 +12,10 @@ export 'pokemons/pokemons_screens.dart';
 export 'pokemons/pokemon_screen.dart';
 
 //biometric
-
 export 'biometrics/biometric_screen.dart';
+
+
+//ubication and maps
+export 'location/controlled_map_screen.dart';
+export 'location/location_screen.dart';
+export 'location/map_screen.dart';
