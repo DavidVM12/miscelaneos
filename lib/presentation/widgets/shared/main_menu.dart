@@ -15,7 +15,10 @@ final menuItems = <MenuItem>[
   MenuItem('Magnetomete', Icons.explore_outlined, '/magnetometer'),
   MenuItem('Gyroscope Ball', Icons.sports_baseball_outlined, '/gyroscope-ball'),
   MenuItem('Compass', Icons.explore, '/compass'),
+
   MenuItem('Pokemons', Icons.catching_pokemon, '/pokemons'),
+  MenuItem('Background process', Icons.storage_rounded, '/db-pokemons'),
+
   MenuItem('biometric', Icons.fingerprint, '/biometric'),
   //ubication
   MenuItem('Ubication', Icons.pin_drop, '/location'),

@@ -10,6 +10,7 @@ export 'sensors/magnetometer_screen.dart';
 
 export 'pokemons/pokemons_screens.dart';
 export 'pokemons/pokemon_screen.dart';
+export 'pokemons/db_pokemons_screen.dart';
 
 //biometric
 export 'biometrics/biometric_screen.dart';
