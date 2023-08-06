@@ -21,5 +21,8 @@ export 'location/location_screen.dart';
 export 'location/map_screen.dart';
 
 //bagde
-
 export 'badge/badge_screen.dart';
+
+//ads
+export 'ads/ad_rewarded_screen.dart';
+export 'ads/ad_full_screen.dart';

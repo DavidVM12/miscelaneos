@@ -5,8 +5,10 @@ import 'package:miscelaneos/config/config.dart';
 import 'package:miscelaneos/presentation/providers/app_state_provider.dart';
 import 'package:miscelaneos/presentation/providers/permissions/permissions_provider.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await AdmobPlugin.initialize();
 
   QuickActionsPlugin.registerActions();
 
